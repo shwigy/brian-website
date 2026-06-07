@@ -12,3 +12,6 @@ CSS added minor color coding and styling. Moving onto body elements
 
 >5
 Finalized CSS code for rest of body and polished visual style
+
+>6
+beginning to feature to allow user to view full image when clicking on the image in the project cards
