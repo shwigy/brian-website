@@ -17,3 +17,5 @@ Finalized CSS code for rest of body and polished visual style
 beginning to feature to allow user to view full image when clicking on the image in the project cards
 >6.1
 created css code for hovering cursor over project image, indicating that image is clickable
+>6.2
+finalized feature, hovering cursor over image will lighten and clicking will open full image with dimmed background

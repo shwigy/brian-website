@@ -86,6 +86,33 @@
     <img id="modalImg" class="modal-content" alt="Full Screen Preview">
 </div>
 
+<!-- JS CODE FOR FULL IMAGE -->
+<script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+
+    // 1. Monitor the website for clicks on any project image
+    document.querySelectorAll('.project-image').forEach(image => {
+        image.addEventListener('click', function() {
+            modal.style.display = "flex";    // Unhide the overlay using Flexbox center
+            modalImg.src = this.src;         // Clone the clicked image source path
+            modalImg.alt = this.alt;         // Clone the accessibility text description
+        });
+    });
+
+    // 2. Hide the overlay modal window when clicking close
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    // Close overlay if user clicks the dark background space
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+</script>
+
 </body>
 
 </html>
