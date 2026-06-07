@@ -120,3 +120,18 @@ footer {
     color: #777777;
     font-size: 0.9rem;
 }
+
+/* LIGHTBOX MODAL */
+.modal-close:hover {
+    color: var(--accent-color);
+}
+
+/* Visual cue to let users know project cards are clickable */
+.project-image {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.project-image:hover {
+    opacity: 0.9;
+}
