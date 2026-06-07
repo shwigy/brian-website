@@ -48,3 +48,75 @@ header a:hover {
     text-decoration: underline;
 }
 
+/* 3. SECTION & SKILL STYLING */
+section {
+    background-color: var(--card-bg);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* 4. PROJECTS GRID STYLING */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive Grid */
+    gap: 20px;
+}
+
+.project-card {
+    background-color: var(--bg-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Keeps imagery ratio safe without squishing */
+    background-color: #ddd; /* Fallback color placeholder */
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+}
+
+/* 5. FOOTER STYLING */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777777;
+    font-size: 0.9rem;
+}

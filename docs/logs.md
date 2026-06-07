@@ -9,3 +9,6 @@ added onto my HTML foundation, creating the body with elements such as: link to 
 
 >4
 CSS added minor color coding and styling. Moving onto body elements
+
+>5
+Finalized CSS code for rest of body and polished visual style
