@@ -58,6 +58,12 @@
                             It supports operations such as addition, subtraction, multiplication, and error-handled division. Additionally, the application actively records a persistent calculation history log within an array. This project tested what I had learned in the past 4 days, having to debug minor issues, and overall testing my patience. This is a project I am very proud of, accounting for how new I am to the world of programming.
                         </p>
                     </div>
+                    <!-- PROJECT HYPERLINK -->
+                    <div class="project-link-container">
+                        <a href="https://github.com/shwigy/calculator-app" target="_blank" class="project-link">
+                            -> View Original Project
+                        </a>
+                    </div>
                 </div>
 
                 <!-- PROJECT 2: FIRST FLOWCHART -->
@@ -69,6 +75,12 @@
                             On my second day of stepping into the world of software development, I had an assignment for a scenario to complete. I was taked with creating a flowchart for a financial technology company who were looking to develop a new savings goal tracking system. This lab challenged me mentally, having to piece together the flow of the code, developing functionality line by line, and undertand coding logic.
                         </p>
                     </div>
+                    <!-- PROJECT HYPERLINK -->
+                    <div class="project-link-container">
+                        <a href="https://lucid.app/lucidchart/7d613dca-b149-4051-8fe0-87da2811054d/edit?viewport_loc=-351%2C-785%2C1140%2C1954%2C0_0&invitationId=inv_0966d7f9-ec19-4cd3-8c23-df95f7f7ccda" target="_blank" class="project-link">
+                            -> View Original Project
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -76,42 +88,43 @@
 
     </div>
 
+
+        <!-- LIGHTBOX MODAL -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img id="modalImg" class="modal-content" alt="Full Screen Preview">
+    </div>
+
+    <!-- JS CODE FOR FULL IMAGE -->
+    <script>
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+
+        // 1. Monitor the website for clicks on any project image
+        document.querySelectorAll('.project-image').forEach(image => {
+            image.addEventListener('click', function() {
+                modal.style.display = "flex";    // Unhide the overlay using Flexbox center
+                modalImg.src = this.src;         // Clone the clicked image source path
+                modalImg.alt = this.alt;         // Clone the accessibility text description
+            });
+        });
+
+        // 2. Hide the overlay modal window when clicking close
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close overlay if user clicks the dark background space
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+    </script>
+    
     <footer>
         <p>&copy; 2026 Brian Flores All Rights Reserved.</p>
     </footer>
-
-    <!-- LIGHTBOX MODAL -->
-<div id="imageModal" class="modal">
-    <span class="modal-close" onclick="closeModal()">&times;</span>
-    <img id="modalImg" class="modal-content" alt="Full Screen Preview">
-</div>
-
-<!-- JS CODE FOR FULL IMAGE -->
-<script>
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-
-    // 1. Monitor the website for clicks on any project image
-    document.querySelectorAll('.project-image').forEach(image => {
-        image.addEventListener('click', function() {
-            modal.style.display = "flex";    // Unhide the overlay using Flexbox center
-            modalImg.src = this.src;         // Clone the clicked image source path
-            modalImg.alt = this.alt;         // Clone the accessibility text description
-        });
-    });
-
-    // 2. Hide the overlay modal window when clicking close
-    function closeModal() {
-        modal.style.display = "none";
-    }
-
-    // Close overlay if user clicks the dark background space
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
-</script>
 
 </body>
 
